@@ -1,0 +1,32 @@
+button {
+    border-radius: 50%;
+    background-color: rgb(5, 5, 77);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    margin: 2px;
+    padding: 5px 10px;
+}
+
+.getOcjenaDiv {
+    display: none;
+}
+
+.fa-star {
+    color: rgb(5, 5, 77);
+}
+
+.rateProduct {
+    background-color: rgb(216, 239, 247);
+    margin: 30px;
+    padding: 10px;
+}
+
+.rateProduct p {
+    margin: 0;
+}
+
+.yourGradeDiv {
+    padding-top: 10px;
+}

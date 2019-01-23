@@ -1,0 +1,26 @@
+<nav>PRODUCT LIST</nav>
+<div class="productsContainer">
+  <div *ngFor='let product of products' class="productCard">
+
+    <app-fav-add [product]='product'></app-fav-add>
+    
+
+    <div class="imgDiv">
+      <img src="../../../assets/images/{{product.image}}">
+    </div>
+    <h3>{{product.name}}</h3>
+    <p class="price">{{product.price}} kn</p>
+
+    <app-ocjene [product]="product"></app-ocjene>
+
+    <div>
+      <h4>Operating system: {{product.operatingSystem}}</h4>
+      <h4>Processor: {{product.processor}}</h4>
+      <h4>SSD: {{product.SSD}}GB</h4>
+    </div>
+    <a routerLink='/details/{{product.id}}'>
+      <button class="btnDetail">Details</button>
+    </a>
+  </div>
+
+</div>

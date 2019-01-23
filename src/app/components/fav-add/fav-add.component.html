@@ -1,0 +1,4 @@
+    <button (click)="clickedProduct()">
+        <span *ngIf = "!product.favorite">Add to favorite</span>
+        <span *ngIf = "product.favorite"> Remove from favorite</span>
+      </button>

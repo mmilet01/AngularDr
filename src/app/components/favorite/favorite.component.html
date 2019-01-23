@@ -1,0 +1,8 @@
+<h1>FAVORITES <i class="fa fa-laptop"></i></h1>
+<div class="favDiv" *ngFor='let product of products'>
+            <a routerLink='/details/{{product.id}}'>
+                  <p>{{product.name}}</p>
+            </a>
+            <app-get-grade [product]='product'></app-get-grade>
+ </div>
+ 

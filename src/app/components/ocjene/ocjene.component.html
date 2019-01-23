@@ -1,0 +1,43 @@
+<!-- 
+<p>Drugi nacin</p>
+<h1>Ocjene</h1>
+<p>{{getOcjena() | number:'1.0-2'}} na temelju {{ocjene.length}} ocjena</p>
+<button (click)='ocjenaPush(1)'>1</button>
+<button (click)='ocjenaPush(2)'>2</button>
+<button (click)='ocjenaPush(3)'>3</button>
+<button (click)='ocjenaPush(4)'>4</button>
+<button (click)='ocjenaPush(5)'>5</button> -->
+
+
+<p class="getOcjenaDiv">
+  {{getOcjena()}} 
+</p>
+<i *ngFor='let ocjena of array' class="fa fa-star"></i> 
+
+<!-- na temelju {{ocjene.length}} ocjena
+ -->
+<div *ngIf='!product.isDisabled'>
+  </div>
+<div class="rateProduct">
+  <p>Vaša ocjena:</p>
+
+  <button  (click)='ocjenaPush(1,product)'>1</button>
+  <button  (click)='ocjenaPush(2,product)'>2</button>
+  <button  (click)='ocjenaPush(3,product)'>3</button>
+  <button  (click)='ocjenaPush(4,product)'>4</button>
+  <button  (click)='ocjenaPush(5,product)'>5</button>
+
+  <br>
+  
+
+  
+  <p class="yourGradeDiv" *ngIf ="vasaOcjena">Ocjenili ste proizvod ocjenom {{vasaOcjena}}</p>
+
+</div>
+
+<!-- <div *ngIf='product.isDisabled'>
+  <p>Ocjenili ste proizvod ocjenom {{vasaOcjena}}</p>
+  <i  *ngFor='let ocjena of array' class="fa fa-star"></i>
+
+</div> -->
+

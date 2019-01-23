@@ -1,0 +1,24 @@
+<nav>
+    <a routerLink="/list"><i class="fas fa-chevron-left"></i> List</a>
+</nav>
+<div class="detailProduct" *ngIf="product">
+  
+  <h2>{{product.name}}</h2>
+  <div class="product-container">
+    <img src="../../../assets/images/{{product.image}}">
+    <div class="about-product">
+      <p>{{product.graphics}}</p>
+      <p>{{product.operatingSystem}}</p>
+      <p>{{product.processor}}</p>
+      <p>{{product.RAM}}GB</p>
+      <p>{{product.SSD}}GB</p>
+      <p>{{product.price}} kn</p>
+      <p>{{getOcjena()}}</p>
+<!--       <app-get-grade [product]='product'> </app-get-grade>
+ -->      <app-fav-add [product]='product'></app-fav-add>
+    </div>
+  </div>
+  <div class="product-bottom">
+    <app-recenzije-add [product]='product'></app-recenzije-add>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+
+<div *ngIf='product'>
+    <p class='recenzije'>
+        RECENZIJE
+     </p>
+  
+    <div class="divRecenzija" *ngFor='let recenzija1 of product.recenzije'>
+        <p><b>{{recenzija1.username | uppercase}}:</b></p>
+        <i>{{recenzija1.recenzija}}</i> 
+    </div>
+</div>
